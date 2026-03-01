@@ -13,3 +13,51 @@ APIs are mechanisms that enable two software components — such as the frontend
 
 Frontend → Request → API → Backend  
 Backend → Response → API → Frontend
+
+# API Analogy
+
+## Restaurant Example
+
+An API works like a restaurant system.
+
+- **Customer** → Sends a **Request**
+- **Waiter** → Acts as the **API**
+- **Kitchen** → Processes the request
+
+## Flow
+
+Customer → Request → Waiter → Kitchen  
+Kitchen → Response → Waiter → Customer
+
+## Explanation
+
+- The **Customer** does not go directly to the Kitchen.
+- The **Waiter (API)** takes the request to the Kitchen.
+- The **Kitchen** prepares the response.
+- The **Waiter** brings the response back to the Customer.
+
+
+# Need for APIs
+
+## Architecture Flow
+
+Frontend → Backend → Database
+
+- **Frontend** sends request to Backend.
+- **Backend** processes the request.
+- **Backend** interacts with the Database.
+- **Database** returns data to Backend.
+- **Backend** sends response to Frontend.
+
+---
+
+## Monolithic Architecture
+
+In a monolithic architecture:
+
+
+- Frontend and Backend exist in the same project.
+- Single codebase.
+- Structured into folders like:
+  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/87cc67a5-cb41-44b8-b4d0-e6f77909b364" />
+
