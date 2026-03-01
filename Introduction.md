@@ -164,3 +164,44 @@ In monolithic architecture:
 - ML model, backend logic, and frontend exist in a single codebase.
 - Everything is tightly coupled.
 
+# API – ML Perspective (Service-Based Architecture)
+
+## Architecture Flow
+
+Clients  
+   ↓  
+API  
+   ↓  
+Backend  
+   ↓  
+ML Model  
+
+ML Model → Backend → API → Clients
+
+---
+
+## Components
+
+- Clients (Chatbot, Amazon, RAG system, etc.)
+- API
+- Backend
+- ML Model
+
+---
+
+## Explanation
+
+- Multiple clients send requests to the API.
+- The API forwards requests to the Backend.
+- The Backend communicates with the ML Model.
+- The ML Model generates predictions or responses.
+- The response flows back through Backend → API → Clients.
+
+---
+
+## Key Idea
+
+- One ML model can serve multiple applications.
+- Clients do not directly access the ML model.
+- All communication happens through APIs.
+- Architecture is scalable and reusable.
